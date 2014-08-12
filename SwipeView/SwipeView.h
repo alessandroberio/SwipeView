@@ -122,6 +122,8 @@ typedef NS_ENUM(NSUInteger, SwipeViewAlignment)
 - (BOOL)swipeView:(SwipeView *)swipeView shouldSelectItemAtIndex:(NSInteger)index;
 - (void)swipeView:(SwipeView *)swipeView didSelectItemAtIndex:(NSInteger)index;
 
+- (void)swipeView:(SwipeView *)swipeView willQueueView:(UIView *)view;
+
 @end
 
 

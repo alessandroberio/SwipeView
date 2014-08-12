@@ -584,6 +584,8 @@
 
 - (void)queueItemView:(UIView *)view
 {
+    [_delegate swipeView:self willQueueView:view];
+    
     if (view)
     {
         [_itemViewPool addObject:view];
