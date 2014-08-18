@@ -569,7 +569,6 @@
 
 - (void)layoutSubviews
 {
-    [super layoutSubviews];
     [self updateItemSizeAndCount];
     [self updateScrollViewDimensions];
     [self updateLayout];
@@ -577,6 +576,8 @@
     {
         [self scrollToItemAtIndex:self.currentItemIndex duration:0.25];
     }
+    
+    [super layoutSubviews];
 }
 
 #pragma mark -
